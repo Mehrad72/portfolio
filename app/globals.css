@@ -1,5 +1,7 @@
 @import 'tailwindcss';
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --font-family-sans: 'Inter', sans-serif;
 }
@@ -65,7 +67,7 @@ pre code {
   line-height: 1.5;
 }
 
-pre code > span .sh__token--identifier {
+pre code>span .sh__token--identifier {
   color: white !important;
 }
 
@@ -94,6 +96,10 @@ pre code span {
 
 hr {
   color: var(--color-gray-200);
+}
+
+p {
+  color: var(--color-gray-400);
 }
 
 /* Remove Safari input shadow on mobile */
